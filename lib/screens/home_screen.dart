@@ -74,11 +74,11 @@ class HomeScreen extends StatelessWidget {
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                label: 'Home',
+                label: '',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.favorite),
-                label: 'Liked',
+                label: '',
               ),
             ],
             currentIndex: context.watch<HomeScreenCubit>().state,
