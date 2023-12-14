@@ -21,9 +21,6 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-                'Welcome!',
-                style: const TextStyle(fontSize: 20.0)),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 15.0),
               child: TextField(
@@ -33,11 +30,9 @@ class LoginScreen extends StatelessWidget {
                     fillColor: Colors.white,
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      borderSide: BorderSide(color: Colors.deepOrange.shade400, width: 2.0),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      borderSide: BorderSide(color: Colors.deepOrange.shade400, width: 2.0),
                     ),
                     labelText: 'Username'
                 ),
