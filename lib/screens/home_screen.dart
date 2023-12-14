@@ -78,14 +78,14 @@ class HomeScreen extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.favorite),
-                label: 'Favorites',
+                label: 'Liked',
               ),
             ],
             currentIndex: context.watch<HomeScreenCubit>().state,
             onTap: (index) {
               context.read<HomeScreenCubit>().setSelectedIndex(index);
             },
-            backgroundColor: Colors.deepOrange.shade400,
+            backgroundColor: Colors.blue,
             iconSize: 30,
             mouseCursor: SystemMouseCursors.click,
             selectedItemColor: Colors.white,

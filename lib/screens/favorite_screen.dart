@@ -12,7 +12,7 @@ class FavoriteScreen extends StatelessWidget {
         return Scaffold(
           body: Center(
             child: favoriteCats.isEmpty
-                ? Text('No favorite cats')
+                ? Text('No favorites cats')
                 : GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
@@ -38,7 +38,7 @@ class FavoriteScreen extends StatelessWidget {
                           context.read<FavoriteCatsCubit>().removeFromFavorites(catId);
                         },
                         icon: Icon(Icons.not_interested),
-                        label: Text('Unlike'),
+                        label: Text('Delete'),
                         style: ButtonStyle(
                           shape: MaterialStateProperty.all<OutlinedBorder>(
                             RoundedRectangleBorder(

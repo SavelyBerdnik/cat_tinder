@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<void> _checkAuthenticationStatus() async {
     bool isConnected = await _checkInternetConnection();
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
 
     if (isConnected) {
       final authStatus = context.read<AuthenticationCubit>().state;
@@ -62,13 +62,17 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.pink.shade50,
+    return const Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/splashscreen_logo.png', width: 150, height: 150),
+            Text("Cat Tinder", style: TextStyle(
+              fontSize: 50.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.blue,
+            ), ),
           ],
         ),
       ),
