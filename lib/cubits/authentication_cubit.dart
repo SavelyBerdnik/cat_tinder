@@ -35,9 +35,13 @@ class AuthenticationCubit extends Cubit<AuthenticationStatus> {
   }
 
   Future<void> loginUser(User user, BuildContext context) async {
-    await _saveUserToPrefs(user);
+    if (user.name != '' && user.password != '') {
+      await _saveUserToPrefs(user);
 
-    emit(AuthenticationStatus.authenticated);
+      emit(AuthenticationStatus.authenticated);
+    } else {
+      _showErrorMessage(context, 'Enter username and password');
+    }
   }
 
   void logoutUser() {
