@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../cubits/favorite_cats_cubit.dart';
+import '../cubits/favorites_cubit.dart';
 import 'cat_hero_image_screen.dart';
 
 class FavoriteScreen extends StatelessWidget {

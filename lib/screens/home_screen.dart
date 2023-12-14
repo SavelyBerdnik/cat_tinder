@@ -5,7 +5,7 @@ import '../cubits/authentication_cubit.dart';
 import '../cubits/cat_cubit.dart';
 import '../cubits/home_screen_cubit.dart';
 import 'cat_screen.dart';
-import 'favorite_screen.dart';
+import 'favorites_screen.dart';
 import 'login_screen.dart';
 
 class HomeScreen extends StatelessWidget {

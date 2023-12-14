@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:mobile_dev/cubits/authentication_cubit.dart';
 import 'package:mobile_dev/cubits/cat_cubit.dart';
-import 'package:mobile_dev/cubits/favorite_cats_cubit.dart';
+import 'package:mobile_dev/cubits/favorites_cubit.dart';
 import 'package:mobile_dev/cubits/home_screen_cubit.dart';
 import 'package:mobile_dev/screens/home_screen.dart';
 import 'package:mobile_dev/screens/splash_screen.dart';
