@@ -15,9 +15,9 @@ class FavoriteScreen extends StatelessWidget {
                 ? Text('No favorites cats')
                 : GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                crossAxisSpacing: 8.0,
-                mainAxisSpacing: 8.0,
+                crossAxisCount: 1,
+                crossAxisSpacing: 20.0,
+                mainAxisSpacing: 20.0,
               ),
               itemCount: favoriteCats.length,
               itemBuilder: (context, index) {
