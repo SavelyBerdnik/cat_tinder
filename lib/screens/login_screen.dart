@@ -46,11 +46,9 @@ class LoginScreen extends StatelessWidget {
                   fillColor: Colors.white,
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
-                    borderSide: BorderSide(color: Colors.deepOrange.shade400, width: 2.0),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
-                    borderSide: BorderSide(color: Colors.deepOrange.shade400, width: 2.0),
                   ),
                   labelText: 'Password'),
             ),
@@ -74,12 +72,12 @@ class LoginScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                 ),
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.deepOrange.shade400),
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
                 foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                overlayColor: MaterialStateProperty.all<Color>(Colors.deepOrange.shade200),
+                overlayColor: MaterialStateProperty.all<Color>(Colors.blue),
                 textStyle: MaterialStateProperty.all<TextStyle>(
                   TextStyle(
-                    fontSize: 16.0,
+                    fontSize: 20.0,
                     color: Colors.white,
                   ),
                 ),
